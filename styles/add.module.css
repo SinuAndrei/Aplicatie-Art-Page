@@ -1,0 +1,204 @@
+.addForm {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+
+.containerInputs {
+  background-color: transparent;
+  padding: 0rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.leftContainer {
+  width: 30%;
+  height: 100%;
+}
+
+.rightContainer {
+  width: 70%;
+  height: 100%;
+}
+
+.contactTitle {
+  color: #166f4b;
+  /* Verde închis */
+}
+
+.containerInputs form {
+  width: 100%;
+}
+
+.container label {
+  font-size: 16px;
+  color: #166f4b;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container label {
+  font-size: 16px;
+  color: #166f4b;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container input,
+.container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #B0C4B1;
+  /* Verde-gri */
+  border-radius: 8px;
+  background-color: #E6EDE0;
+  /* Gri deschis */
+  font-size: 16px;
+  color: #333;
+  resize: vertical;
+}
+
+.container select {
+  width: 100%;
+  padding: 10px;
+  padding-right: 20px;
+  border: 2px solid #B0C4B1;
+  /* Verde-gri */
+  border-radius: 8px;
+  background-color: #E6EDE0;
+  /* Gri deschis */
+  font-size: 16px;
+  color: #333;
+  appearance: none;
+
+}
+
+.container select::-ms-expand {
+  display: none;
+  /* Elimină săgeata implicită în Internet Explorer */
+}
+
+.container .fileInput {
+  font-size: 16px;
+  /* Setează dimensiunea fontului */
+  padding: 8px 8px;
+  /* Ajustează padding-ul pentru a se potrivi cu dimensiunea fontului */
+  border: 2px solid #B0C4B1;
+  /* Verde-gri */
+  border-radius: 8px;
+  background-color: #E6EDE0;
+  /* Gri deschis */
+  color: #333;
+  cursor: pointer;
+}
+
+.container input:focus,
+.container textarea:focus {
+  outline: none;
+  border-color: #166f4b;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container input {
+  width: 100%;
+}
+
+.addForm button {
+  width: 100%;
+  background-color: #166f4b;
+  /* Verde închis */
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.addForm button:hover {
+  background-color: #ffffff;
+  color: #166f4b;
+  border: 1px solid #166f4b;
+}
+
+.addForm button.loadingBtn {
+  background-color: #ffffff;
+  color: #166f4b;
+  border: 1px solid #166f4b;
+}
+
+.desktopSubmitButton {
+  display: block;
+}
+
+.mobileSubmitButton {
+  display: none;
+}
+
+.imageContainer {
+  max-height: 400px;
+  /* Setează înălțimea maximă a containerului imaginii */
+  overflow: hidden;
+  /* Previne depășirea imaginii */
+}
+
+.imagePreview {
+  max-width: 300px;
+  max-height: 380px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.error {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 5px;
+}
+
+@media (max-width: 767px) {
+  .addForm {
+    width: 100%;
+  }
+
+  .containerInputs {
+    padding: 0rem 4rem;
+    gap: 0;
+    flex-direction: column;
+  }
+
+  .leftContainer,
+  .rightContainer {
+    width: 100%;
+  }
+
+
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .desktopSubmitButton {
+    display: none;
+  }
+
+  .mobileSubmitButton {
+    display: block;
+    width: calc(100% - 8rem) !important;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}

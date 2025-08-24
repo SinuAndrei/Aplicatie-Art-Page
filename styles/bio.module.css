@@ -1,0 +1,57 @@
+.bio {
+  width: 80%;
+}
+
+.bioTitleH1 {
+  margin-bottom: 4rem;
+  color: #3b3b3b;
+  text-align: center;
+  display: inline-block;
+}
+
+.bioTitleH2 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  color: #3b3b3b;
+  text-align: center;
+  display: inline-block;
+}
+
+.bioTitleContainer {
+  text-align: center;
+}
+
+.underline {
+  position: relative;
+  display: inline-block;
+}
+
+.underline::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 100%;
+  height: 14px;
+  transform: skew(-12deg) translateX(-50%);
+  background: rgba(238, 111, 87, 0.5);
+  z-index: -1;
+}
+
+.bioContent p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+  color: #8e8787;
+}
+
+.bioContent ul {
+  padding-left: 20px; /* Adjust the padding to keep the list items inside the div */
+}
+
+.bioContent ul li {
+  text-align: justify;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #8e8787;
+}

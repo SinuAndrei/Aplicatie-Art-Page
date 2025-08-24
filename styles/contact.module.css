@@ -1,0 +1,133 @@
+.contactForm {
+  background-color: transparent;
+  padding: 0rem 7rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactTitle {
+  color: #166f4b;
+  /* Verde închis */
+}
+
+.contactForm form {
+  width: 100%;
+}
+
+.formRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.container label {
+  font-size: 16px;
+  color: #166f4b;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.containerTextarea label {
+  font-size: 16px;
+  color: #166f4b;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container input,
+.containerTextarea textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #B0C4B1;
+  /* Verde-gri */
+  border-radius: 8px;
+  background-color: #E6EDE0;
+  /* Gri deschis */
+  font-size: 16px;
+  color: #333;
+}
+
+.container input:focus,
+.containerTextarea textarea:focus {
+  outline: none;
+  border-color: #166f4b;
+}
+
+.container {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.containerTextarea {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.container input {
+  width: 100%;
+}
+
+.contactForm button {
+  width: 20%;
+  background-color: #166f4b;
+  /* Verde închis */
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+
+.contactForm button:hover {
+  background-color: #ffffff;
+  color: #166f4b;
+  border: 1px solid #166f4b;
+}
+
+
+.contactForm button.loading {
+  background-color: #ffffff;
+  color: #166f4b;
+  border: 1px solid #166f4b;
+}
+
+.error {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 5px;
+}
+
+@media (max-width: 767px) {
+  .contactForm {
+    padding: 0rem 4rem;
+    width: 100%;
+    padding-bottom: 0px;
+  }
+
+  .formRow {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .container p {
+    margin-bottom: 0px;
+  }
+
+  .contactForm button {
+    width: 50%;
+  }
+}

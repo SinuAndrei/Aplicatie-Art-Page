@@ -1,0 +1,81 @@
+.detailsContainer {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  max-width: calc(100vw - 20%);
+  max-height: 120vh;
+}
+
+.title {
+  margin: 0px;
+  padding: 0px;
+  font-weight: 100;
+  color: #3B3B3B;
+}
+
+.imageProducts {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  gap: 20px
+}
+
+.details {
+  display: flex;
+  max-width: 40%;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.details .image {
+  max-width: 60%;
+  /* Asigură că imaginea nu depășește lățimea containerului părinte */
+  max-height: 100%;
+  /* Asigură că imaginea nu depășește înălțimea containerului părinte */
+  object-fit: contain;
+}
+
+.detailsContainer h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.detailsContainer p {
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #6b6a69;
+  font-size: 0.9rem;
+  gap: 5px;
+  line-height: 1.5;
+  margin-top: 0px;
+}
+
+.detailsContainer p strong {
+  color: #3B3B3B;
+}
+
+@media (max-width: 767px) {
+  .details {
+    max-width: 100%;
+    align-self: flex-start;
+  }
+
+  .detailsContainer {
+    flex-direction: column;
+    max-width: 100%;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .title {
+    padding: 30px;
+    text-align: center;
+  }
+
+  .imageProducts {
+    max-width: 100%;
+  }
+}
